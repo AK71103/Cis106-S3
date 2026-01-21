@@ -1,0 +1,16 @@
+#Input phase
+CMake=(input("Enter Car Make: "))
+CModel=(input("Enter Car Model: "))
+MSRP=(input("Enter MSRP: "))
+Dscnt=(float(input(("enter the discount percent"))))
+
+#Process phase
+Dscntprct= (Dscnt / 100)
+AmntOff= (MSRP*Dscntprct)
+DscntPri= (MSRP-AmntOff)
+
+#Output phase
+print("Car Make: ",CMake)
+Print("Car Model: ",CModel)
+print("MSRP: ",MSRP)
+print("Discounted Price: ",DscntPri)
